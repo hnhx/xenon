@@ -1,0 +1,14 @@
+main: xenon.main
+name: xenon
+version: 1.0
+api-version: 1.16
+description: The main plugin of Xenon.
+commands:
+    kill:
+        aliases: suicide
+    help:
+    discord:
+        aliases: d
+    stats:
+    joindate:
+        aliases: jd
