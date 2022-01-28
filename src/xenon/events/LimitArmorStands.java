@@ -7,7 +7,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.scheduler.BukkitRunnable;
-import xenon.misc.Common;
+import xenon.Main;
 
 /**
  *
@@ -32,6 +32,6 @@ public class LimitArmorStands {
                 }
             }
          
-            }}.runTaskTimer(Common.getPlugin(), 0, 20);
+            }}.runTaskTimer(Main.getInstance(), 0, 20);
         }
 }

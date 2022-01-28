@@ -6,14 +6,15 @@
 package xenon.events;
 
 import java.lang.reflect.Field;
-import net.minecraft.server.v1_16_R3.ChatComponentText;
-import net.minecraft.server.v1_16_R3.MinecraftServer;
-import net.minecraft.server.v1_16_R3.PacketPlayOutPlayerListHeaderFooter;
+
+import net.minecraft.server.v1_16_R1.ChatComponentText;
+import net.minecraft.server.v1_16_R1.MinecraftServer;
+import net.minecraft.server.v1_16_R1.PacketPlayOutPlayerListHeaderFooter;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_16_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-import xenon.misc.Common;
+import xenon.Main;
 import xenon.misc.GetElapsedTime;
 
 /**
@@ -73,6 +74,6 @@ public class CustomTab {
 
                 }
 
-            }.runTaskTimer(Common.getPlugin(), 0, 20);
+            }.runTaskTimer(Main.getInstance(), 0, 20);
     }
 }
