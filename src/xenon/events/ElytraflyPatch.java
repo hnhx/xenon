@@ -9,7 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.scheduler.BukkitRunnable;
-import xenon.misc.Common;
+import xenon.Main;
 
 /**
  *
@@ -40,7 +40,7 @@ public class ElytraflyPatch implements Listener {
                 Location curLocation = p.getLocation();
                 double curDistanceFlown = curLocation.distanceSquared(prevLocation);
                 
-                if (p.isGliding() && !p.isInWater()) {
+                if (p.isGliding() && !p.getLocation().getBlock().isLiquid()) {
                   if (glideStarted == null) glideStarted = curLocation;  
                     
                   if (distancesFlown.size() == 10) {
@@ -69,7 +69,7 @@ public class ElytraflyPatch implements Listener {
                 prevLocation = curLocation;
            
             }
-        }.runTaskTimer(Common.getPlugin(), 0, 3);
+        }.runTaskTimer(Main.getInstance(), 0, 3);
      }
      
 }

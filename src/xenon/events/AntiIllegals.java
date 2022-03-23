@@ -16,7 +16,7 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
-import xenon.misc.Common;
+import xenon.Main;
 
 /**
  *
@@ -34,7 +34,7 @@ public class AntiIllegals implements Listener {
                  Inventory inv = p.getInventory();
                 revert(inv);
                 }
-              }.runTaskLater(Common.getPlugin(), 1);
+              }.runTaskLater(Main.getInstance(), 1);
          }
      }
         
