@@ -9,6 +9,7 @@ import java.nio.file.attribute.FileTime;
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import org.bukkit.Bukkit;
+import org.bukkit.Chunk;
 import org.bukkit.World;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,7 +21,7 @@ import org.bukkit.event.Listener;
  *
  * @author hanna
  */
-public class StatsCommandExecutor implements Listener, CommandExecutor {
+public class Stats implements Listener, CommandExecutor {
     
     
     @Override

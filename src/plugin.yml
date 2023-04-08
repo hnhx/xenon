@@ -1,4 +1,4 @@
-main: xenon.Main
+main: xenon.main
 name: xenon
 version: 1.0
 api-version: 1.16

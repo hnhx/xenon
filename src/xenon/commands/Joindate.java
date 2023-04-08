@@ -15,7 +15,7 @@ import org.bukkit.event.Listener;
  *
  * @author hanna
  */
-public class JoindateCommandExecutor implements Listener, CommandExecutor {
+public class Joindate implements Listener, CommandExecutor {
     
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String labe, String[] args) {
