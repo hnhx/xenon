@@ -9,7 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.scheduler.BukkitRunnable;
-import xenon.Main;
+import xenon.misc.Common;
 
 /**
  *
@@ -47,6 +47,6 @@ public class AntiNetherRoof implements Listener {
                     }
                 }
             }
-        }.runTaskTimer(Main.getInstance(), 0, 20);
+        }.runTaskTimer(Common.getPlugin(), 0, 20);
      }
 }

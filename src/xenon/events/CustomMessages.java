@@ -2,7 +2,7 @@ package xenon.events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.entity.PlayerDeathEvent​;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 /**
@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
  */
 public class CustomMessages implements Listener {
     @EventHandler
-     public void PlayerDeathEvent​(PlayerDeathEvent event) {
+     public void PlayerDeathEvent​(PlayerDeathEvent​ event) {
          String pName = event.getEntity().getName();
          String dMessage = event.getDeathMessage().replace(pName + " ", "");
          event.setDeathMessage(String.format("§d%s §b%s",pName, dMessage));
